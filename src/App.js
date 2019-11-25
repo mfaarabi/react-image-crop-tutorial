@@ -1,5 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
+import CropDemo from './components/CropDemo';
+import Crop from './components/Crop';
+import ADog from "./assets/a-dog.jpg"
 import './App.css';
 
 function App() {
@@ -7,9 +10,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <CropDemo src={ADog} />
+        <Crop src={ADog} />
         <a
           className="App-link"
           href="https://reactjs.org"
